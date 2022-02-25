@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TheBus HOLO Card heatmap</title>
+<link rel="stylesheet" href="src/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+
+<body>
+<div class="intro">Visualize your trips on <a href="http://www.thebus.org/">TheBus</a>! Navigate to <a href="https://www.holocard.net/">holocard.net</a>, log in, click on the "Card History" tab, and then "Download for Excel". Drag your Card-History.csv file here: <input id="file" type="file" /></div>
+
+<div id="map"></div>
+<script type="module" src="src/index.js"></script>
+
+</body>
+</html>
