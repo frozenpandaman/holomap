@@ -1,16 +1,75 @@
 body {
-	margin: 10px;
+	margin: 0;
 	font-family: sans-serif;
+	font-size: 11pt;
 }
 
 .intro {
 	margin-bottom: 5px;
 }
 
+#intro {
+	min-height: 130px;
+	margin: 5px 15px -5px;
+}
 #map {
-	height: calc(100vh - 47px);
+	height: calc(100vh - 130px);
 }
 
 .leaflet-heatmap-layer {
 	opacity: 0.5;
+}
+
+h1 {
+	margin: 0;
+	font-size: 40pt;
+	font-weight: lighter;
+	color: black;
+	display: inline;
+}
+h1 .the {
+	font-weight: normal;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	text-shadow:
+		0 0 0 #000,
+		-1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px -1px 0 #000,
+		1px 1px 0 #000;
+}
+h1 .bus {
+	font-weight: bold;
+}
+
+h2 {
+	font-weight: normal;
+	margin: -2px 0 15px 20px;
+	color: #027a98;
+}
+h3 {
+	display: inline;
+	font-weight: lighter;
+	font-size: 10pt;
+	padding-left: 10px;
+}
+
+a {
+	color: #00a9c5;
+}
+a:hover {
+	color: white;
+	background: #00a9c5;
+	text-decoration: none;
+}
+.leaflet-control-attribution a:hover {
+	color: #0078a8;
+	background: unset;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }

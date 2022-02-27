@@ -1,0 +1,57 @@
+.leaflet-bar button,
+.leaflet-bar button:hover {
+  background-color: #fff;
+  border: none;
+  border-right: 1px solid #ccc; /* custom */
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.leaflet-bar button {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.leaflet-bar button:hover {
+  background-color: #f4f4f4;
+}
+
+.leaflet-bar button:first-of-type { /* custom */
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.leaflet-bar button:last-of-type { /* custom */
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-right: none;
+}
+
+.leaflet-bar.disabled,
+.leaflet-bar button.disabled {
+  background-color: #ddd; /* custom */
+  color: #094f8e;
+  cursor: default;
+  pointer-events: none;
+}
+
+.easy-button-button .button-state {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.leaflet-touch .leaflet-bar button {
+  width: fit-content; /* custom */
+  height: 30px;
+  line-height: 30px;
+}

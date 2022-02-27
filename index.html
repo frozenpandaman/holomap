@@ -3,15 +3,42 @@
 <head>
 <title>TheBus HOLO Card heatmap</title>
 <link rel="stylesheet" href="src/style.css" />
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+<link rel="stylesheet" href="src/leaflet-timedimension/leaflet.timedimension.control-mod.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+<script type="text/javascript" src="src/leaflet-timedimension/leaflet.timedimension.src-mod.js"></script>
+
+<link href='src/leaflet-fullscreen/leaflet.fullscreen.css' rel='stylesheet' />
+<script src='src/leaflet-fullscreen/Leaflet.fullscreen.js'></script>
+
+<link href='src/leaflet-easybutton/easy-button-mod.css' rel='stylesheet' />
+<script src='src/leaflet-easybutton/easy-button.js'></script>
+
+<script type="module" src="src/index.js"></script>
 </head>
 
 <body>
-<div class="intro">Visualize your trips on <a href="http://www.thebus.org/">TheBus</a>! Navigate to <a href="https://www.holocard.net/">holocard.net</a>, log in, click on the "Card History" tab, and then "Download for Excel". Drag your Card-History.csv file here: <input id="file" type="file" /></div>
+<div id="intro">
+<h1><span class="the">The</span><span class="bus">Bus</span> trip visualizer</h1> <h3>by <a href="https://elifessler.com/">eli fessler</a></h3>
+<h2>Interactive, web-based browser for your Oʻahu public transit history &ndash; see where you catch da bus da most!</h2>
+
+<noscript><h2><b style="color:#000;">You need JavaScript enabled to use this site!</b></h2></noscript>
+
+<div class="left">
+Instructions: Log in to the <a class="holo" target="_blank" href="https://www.holocard.net/customeraccount/dashboard-index/#tabHistory">HOLO Card site</a>, click "Card History", then "Download for Excel". Drag your Card-History.csv file here: <input id="file" type="file" />
+</div>
+
+<div class="right">
+<a id="toggle" href="#" onclick="addHeatLayer();return false;">Show heatmap of all trips</a>
+</div>
+<div style="clear: both; height: 5px;"></div>
+
+</div>
 
 <div id="map"></div>
-<script type="module" src="src/index.js"></script>
 
 </body>
 </html>
