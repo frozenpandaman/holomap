@@ -73,3 +73,17 @@ a:hover {
 .right {
 	float: right;
 }
+
+.corner {
+	font-size: 10pt;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.corner a {
+	color: #04778a;
+}
+.corner a:hover {
+	color: white;
+	background: #04778a;
+}
