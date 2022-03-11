@@ -95,7 +95,7 @@ var zoomBar = L.easyBar([ btn_atlas, btn_transport, btn_toner, btn_osm], { posit
 zoomBar.addTo(map);
 
 style_atlas();
-map.attributionControl.addAttribution('Map tiles &copy; <a href="https://www.thunderforest.com/">Thunderforest</a> | Data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a>');
+map.attributionControl.addAttribution('Map tiles &copy; <a href="https://www.thunderforest.com/">Thunderforest</a> &amp; <a href="https://stamen.com/">Stamen Design</a> | Data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a>');
 
 
 window.addHeatLayer = function () {
