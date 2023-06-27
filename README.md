@@ -1,12 +1,12 @@
-# TheBus trip visualizer
+# TheBus & Skyline trip visualizer
 
-Interactive, web-based browser for your Oʻahu public transit history – see where you catch da bus da most!
+Interactive browser for your Oʻahu public transit history – see where you catch da bus & da rail da most!
 
-https://www2.hawaii.edu/~eli8/holomap/
+**https://www2.hawaii.edu/~eli8/holomap/**
 
-## About TheBus
+## About TheBus & Skyline
 
-TheBus is the public bus transit system serving the City and County of Honolulu, Hawaiʻi. Read more on [Wikipedia](https://en.wikipedia.org/wiki/TheBus_(Honolulu)) and [thebus.org](http://www.thebus.org/).
+TheBus and Skyline are the public bus and rail transit systems serving the City and County of Honolulu, Hawaiʻi. For more information, see [TheBus on Wikipedia](https://en.wikipedia.org/wiki/TheBus_(Honolulu)), [Skyline on Wikipedia](https://en.wikipedia.org/wiki/Skyline_(Honolulu)), and [thebus.org](https://www.thebus.org/).
 
 ## Instructions
 
@@ -18,6 +18,6 @@ No data is uploaded and all visualization is done locally in your browser.
 
 ## Features
 
-* Heatmap of lifetime bus trips (based on boarding location)
-* Interactive navigation of bus stops & time
+* Heatmap of lifetime bus/rail trips (based on boarding location)
+* Interactive navigation of bus stops/rail stations & time
 * Four different toggleable map styles
